@@ -21,6 +21,7 @@ namespace ThisisLibery
             {
                 Console.Clear();
                 Console.WriteLine("Menu 1 or 2");
+                Console.WriteLine("1 is for taking book, 2 is for giving book back");
                 a.userMenu = Console.ReadLine();
 
                 a.Menu();

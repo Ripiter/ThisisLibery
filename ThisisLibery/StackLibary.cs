@@ -55,14 +55,14 @@ namespace ThisisLibery
 
         public void AddBooks()
         {
-            //bookAvaible.Add("The Philosopher's Stone");
-            //bookAvaible.Add("The Chamber of Secrets");
-            //bookAvaible.Add("The Prisoner of Azkaban");
-            //bookAvaible.Add("The Goblet of Fire");
-            //bookAvaible.Add("The Order of the Phoenix");
-            //bookAvaible.Add("The Half-Blood Prince");
-            //bookAvaible.Add("The Deathly Hallows");
-            //bookAvaible.Add("Harry Potter and the Cursed Child");
+            Book harryPotter1 = new Book("The Philosopher's Stone");
+            Book harryPotter2 = new Book("The Chamber of Secrets");
+            Book harryPotter3 = new Book("The Prisoner of Azkaban");
+            Book harryPotter4 = new Book("The Goblet of Fire ");
+            Book harryPotter5 = new Book("The Order of the Phoenix");
+            Book harryPotter6 = new Book("The Half-Blood Prince");
+            Book harryPotter7 = new Book("The Deathly Hallows");
+            Book harryPotter8 = new Book("Harry Potter and the Cursed Child");
         }
     }
 }

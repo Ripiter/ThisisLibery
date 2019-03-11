@@ -14,6 +14,7 @@ namespace ThisisLibery
             StackLibary stackBooks = new StackLibary();
             
             //Write's if there are any books
+            //And if there is write all the books
             try
             {
                 foreach(string e in StackLibary.bookStack)
@@ -31,13 +32,13 @@ namespace ThisisLibery
             if (userI == "yes")
                 ReturnB();            
         }
-
+        
 
         void ReturnB()
         {
             try
             {
-                //Set book back to the list, sadly at the end of the index
+                //Set book back to the list, at the end of the index
                 StackLibary.bookAvaible.Add(StackLibary.bookStack.Pop().ToString());
             }
             catch

@@ -39,13 +39,8 @@ namespace ThisisLibery
             this.name = name;
             books.Add(this);
         }
-        Book harryPotter1 = new Book("The Philosopher's Stone");
-        Book harryPotter2 = new Book("The Chamber of Secrets");
-        Book harryPotter3 = new Book("The Prisoner of Azkaban");
-        Book harryPotter4 = new Book("The Goblet of Fire ");
-        Book harryPotter5 = new Book("The Order of the Phoenix");
-        Book harryPotter6 = new Book("The Half-Blood Prince");
-        Book harryPotter7 = new Book("The Deathly Hallows");
-        Book harryPotter8 = new Book("Harry Potter and the Cursed Child");
+
+
+        
     }
 }
