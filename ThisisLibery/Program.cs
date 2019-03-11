@@ -25,7 +25,6 @@ namespace ThisisLibery
 
                 a.Menu();
 
-
                 Console.ReadLine();
             }
         }
@@ -57,15 +56,12 @@ namespace ThisisLibery
             {
                 Console.Clear();
                 Console.WriteLine("Books avaible");
-           //     stack.AddBooks();
                 stack.BooksAvaible();
                 Console.WriteLine("");
                 Console.WriteLine("What book you want to take?");
                 userBook = Console.ReadLine();
 
                 stack.StackFunction();
-
-           //     stack.bookAvaible.Clear();
                 return;
             }
         }

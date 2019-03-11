@@ -11,14 +11,11 @@ namespace ThisisLibery
         public string userI;
         public void ReturnBooks()
         {
-            
             StackLibary stackBooks = new StackLibary();
             
             //Write's if there are any books
             try
             {
-             //   Console.WriteLine(StackLibary.bookStack.Peek());
-
                 foreach(string e in StackLibary.bookStack)
                 {
                     Console.WriteLine(e);
@@ -32,13 +29,10 @@ namespace ThisisLibery
             Console.WriteLine("Do you want to return the book? yes/no");
             userI = Console.ReadLine().ToLower();
             if (userI == "yes")
-                ReturnB();
-            
-
-
-            //Console.WriteLine(StackLibary.bookStack.Contains(Program.userBook));
-            
+                ReturnB();            
         }
+
+
         void ReturnB()
         {
             try

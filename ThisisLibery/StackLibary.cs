@@ -31,10 +31,7 @@ namespace ThisisLibery
             else
             {
                 Console.WriteLine("Book is not here");
-          //      bookAvaible.Clear();
             }
-            //Return true
-            //Console.WriteLine(SpecialStack.Contains("HarryPotter"))
         }
 
         void RemoveFromList()
@@ -42,7 +39,6 @@ namespace ThisisLibery
             bookAvaible.Remove(Program.userBook);
         }
         
-        //Remove book
         public void BooksAvaible()
         {
             foreach (string a in bookAvaible)
@@ -68,6 +64,5 @@ namespace ThisisLibery
             //bookAvaible.Add("The Deathly Hallows");
             //bookAvaible.Add("Harry Potter and the Cursed Child");
         }
-    
     }
 }
