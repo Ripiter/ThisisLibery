@@ -70,20 +70,7 @@ namespace ThisisLibery
             }
                 if (temp >= 0) 
                 Book.Books.RemoveAt(temp);
-           
-
-            ////For everybook we have
-            //foreach (Book book in Book.Books)
-            //{
-            //    //If the name of the book we are looking at is the same as the book we want to remove
-            //    if (book.Name == Program.userBook)
-            //    {
-            //        //Then remove the book
-            //        Book.Books.Remove(book);
-            //    }
-            //}
-
-
+          
         }
         
         public void BooksAvaible()
