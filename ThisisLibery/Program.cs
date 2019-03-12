@@ -11,11 +11,14 @@ namespace ThisisLibery
     {
         public static string userBook;
         public string userMenu;
-
+        StackLibary sl = new StackLibary();
 
         static void Main(string[] args)
         {
             Program a = new Program();
+
+        
+            
 
             while (true)
             {
@@ -52,17 +55,16 @@ namespace ThisisLibery
 
         void TakeBook()
         {
-            StackLibary stack = new StackLibary();
             while (true)
             {
                 Console.Clear();
                 Console.WriteLine("Books avaible");
-                stack.BooksAvaible();
+                sl.BooksAvaible();
                 Console.WriteLine("");
                 Console.WriteLine("What book you want to take?");
                 userBook = Console.ReadLine();
 
-                stack.StackFunction();
+                sl.StackFunction();
                 return;
             }
         }

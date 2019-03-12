@@ -38,9 +38,6 @@ namespace ThisisLibery
         {
             this.name = name;
             books.Add(this);
-        }
-
-
-        
+        }   
     }
 }

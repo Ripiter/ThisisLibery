@@ -11,35 +11,44 @@ namespace ThisisLibery
         public string userI;
         public void ReturnBooks()
         {
-            StackLibary stackBooks = new StackLibary();
-            
+            Console.Clear();
+            int i = -1;
+            int temp = -1;
             //Write's if there are any books
             //And if there is write all the books
-            try
+            foreach (string e in StackLibary.bookStack)
             {
-                foreach(string e in StackLibary.bookStack)
+                Console.WriteLine(e);
+                if(e == null)
                 {
-                    Console.WriteLine(e);
+                    temp = i;
                 }
+                i++;
             }
-            catch
-            {
-                Console.WriteLine("No book");
-            }
+                if (i == -1)
+                {
+                    Console.WriteLine("No book");
+                }
+                else
+                {
+                    ReturnB();
+                }
+                
 
-            Console.WriteLine("Do you want to return the book? yes/no");
-            userI = Console.ReadLine().ToLower();
-            if (userI == "yes")
-                ReturnB();            
         }
         
 
         void ReturnB()
         {
+            Console.WriteLine("Do you want to return the book? yes/no");
+            userI = Console.ReadLine().ToLower();
+            if (userI != "yes")
+                return;            
             try
             {
                 //Set book back to the list, at the end of the index
-                StackLibary.bookAvaible.Add(StackLibary.bookStack.Pop().ToString());
+                // Book a = new StackLibary.bookStack.Pop();
+                Book a = new Book(StackLibary.bookStack.Pop().ToString());
             }
             catch
             {
