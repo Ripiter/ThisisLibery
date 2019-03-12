@@ -12,6 +12,7 @@ namespace ThisisLibery
         public void ReturnBooks()
         {
             Console.Clear();
+            Console.WriteLine("Books avaible:");
             int i = -1;
             int temp = -1;
             //Write's if there are any books

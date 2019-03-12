@@ -9,9 +9,6 @@ namespace ThisisLibery
 {
     class StackLibary
     {
-     //   public static List<string> bookAvaible = new List<string>() {"The Chamber of Secrets", "The Prisoner of Azkaban","The Goblet of Fire",
-     //                                                            "The Order of the Phoenix", "The Half-Blood Prince", "The Deathly Hallows", "Harry Potter and the Cursed Child"};
-
         Book harryPotter1 = new Book("The Philosopher's Stone");
         Book harryPotter2 = new Book("The Chamber of Secrets");
         Book harryPotter3 = new Book("The Prisoner of Azkaban");
@@ -48,7 +45,7 @@ namespace ThisisLibery
                 AddBooksToStack();
                 RemoveFromList();
             }else
-            { Console.WriteLine("No book");
+            { Console.WriteLine("No book with that name");
             }
         }
 
@@ -70,7 +67,6 @@ namespace ThisisLibery
             }
                 if (temp >= 0) 
                 Book.Books.RemoveAt(temp);
-          
         }
         
         public void BooksAvaible()
@@ -85,17 +81,6 @@ namespace ThisisLibery
         {
             StackLibary.bookStack.Push(Program.userBook);
             Console.WriteLine("Book {0} added to stack", Program.userBook);
-        }
-
-        public void AddBooks()
-        {
-            //Book.Books.Add(harryPotter1);
-            //Book.Books.Add(harryPotter2);
-            //Book.Books.Add(harryPotter3);
-            //Book.Books.Add(harryPotter4);
-            //Book.Books.Add(harryPotter5);
-            //Book.Books.Add(harryPotter6);
-            //Book.Books.Add(harryPotter7);
         }
     }
 }
