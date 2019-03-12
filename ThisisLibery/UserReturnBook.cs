@@ -43,11 +43,11 @@ namespace ThisisLibery
             Console.WriteLine("Do you want to return the book? yes/no");
             userI = Console.ReadLine().ToLower();
             if (userI != "yes")
-                return;            
+                return;           
+            //Reason its in try catch is to avoid error that .pop() shows if there are no elements to remove
             try
             {
-                //Set book back to the list, at the end of the index
-                // Book a = new StackLibary.bookStack.Pop();
+                //Create's the book that uses stack.pop to create itself
                 Book a = new Book(StackLibary.bookStack.Pop().ToString());
             }
             catch

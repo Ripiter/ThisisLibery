@@ -30,8 +30,10 @@ namespace ThisisLibery
             //You can also retrieve the value using the Pop() method. The Pop() method removes and returns the value that was added last to the Stack. 
             //The Contains() method checks whether the specified item exists in a Stack collection or not.
 
-                int i = 0;
-                int temp = -1;
+            //I keep a track of how many time we have went thru
+            //And when we find the one we are looking for we set temp to i
+            int i = 0;
+            int temp = -1;
             foreach (Book book in Book.Books)
             {
                 i++;
@@ -48,24 +50,11 @@ namespace ThisisLibery
             }else
             { Console.WriteLine("No book");
             }
-
-            //Checks if book is avaible
-            //If it is avaible removes from list 
-            //And adds it to the stack
-            //if (bookAvaible.Contains(Program.userBook))
-            //{
-            //    AddBooksToStack();
-            //    RemoveFromList();
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Book is not here");
-            //}
         }
 
         void RemoveFromList()
         {
-            // bookAvaible.Remove(Program.userBook);
+            //We use i and temp to keep track of the foreach loop
             int i = 0;
             int temp = -1;
             //For everybook we have

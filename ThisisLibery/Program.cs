@@ -17,9 +17,6 @@ namespace ThisisLibery
         {
             Program a = new Program();
 
-        
-            
-
             while (true)
             {
                 Console.Clear();
@@ -32,8 +29,6 @@ namespace ThisisLibery
                 Console.ReadLine();
             }
         }
-
-
 
 
         void Menu() {
