@@ -1,4 +1,5 @@
 # ThisisLibery
 
-Class Book is not needed, I was going to use that class but i had some problems with that so I gave up
-on that idea, you are welcome to use it just dont ask me how. 
+The branch master is using a list for the book
+
+The branch TestWithBookObject is used with Class Book and is done correctly
