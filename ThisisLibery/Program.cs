@@ -50,6 +50,7 @@ namespace ThisisLibery
 
         void TakeBook()
         {
+            string findTheBook;
             while (true)
             {
                 Console.Clear();
@@ -59,7 +60,8 @@ namespace ThisisLibery
                 Console.WriteLine("What book you want to take?");
                 userBook = Console.ReadLine();
 
-                sl.StackFunction();
+                findTheBook = sl.StackFunction();
+                Console.WriteLine(findTheBook);
                 return;
             }
         }

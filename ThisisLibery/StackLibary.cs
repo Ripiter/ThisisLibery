@@ -20,8 +20,9 @@ namespace ThisisLibery
 
 
         public static Stack bookStack = new Stack();
-        public void StackFunction()
+        public string StackFunction()
         {
+            string gotIt;
             //The Peek() method returns the last (top-most) value from the stack.
             //The Push() method adds values into the Stack.
             //You can also retrieve the value using the Pop() method. The Pop() method removes and returns the value that was added last to the Stack. 
@@ -42,11 +43,13 @@ namespace ThisisLibery
             }
             if (temp >= 0)
             {
-                AddBooksToStack();
+                gotIt = AddBooksToStack();
                 RemoveFromList();
             }else
-            { Console.WriteLine("No book with that name");
+            {
+                gotIt = "No book with that name";
             }
+            return gotIt;
         }
 
         void RemoveFromList()
@@ -66,7 +69,7 @@ namespace ThisisLibery
 
             }
                 if (temp >= 0) 
-                Book.Books.RemoveAt(temp);
+                    Book.Books.RemoveAt(temp);
         }
         
         public void BooksAvaible()
@@ -77,10 +80,12 @@ namespace ThisisLibery
             }
         }
 
-        void AddBooksToStack()
+        string AddBooksToStack()
         {
             StackLibary.bookStack.Push(Program.userBook);
-            Console.WriteLine("Book {0} added to stack", Program.userBook);
+            //   Console.WriteLine("Book {0} added to stack", Program.userBook);
+            string gotIt = ("Book " + Program.userBook + " added to stack");
+            return gotIt;
         }
     }
 }
